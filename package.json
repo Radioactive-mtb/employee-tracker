@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server,js"
+    "start": "node server.js"
   },
   "author": "Justen Tatum",
   "license": "ISC",
   "dependencies": {
     "console.table": "^0.10.0",
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "inquirer": "^8.2.4",
     "mysql2": "^2.2.5"
