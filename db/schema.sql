@@ -24,8 +24,14 @@ CREATE TABLE employees (
     AUTO_INCREMENT NOT NULL,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
+    title VARCHAR(30),
+    FOREIGN KEY (role_id)
+    REFERENCES roles(title)
+    dept_name VARCHAR(30) NOT NULL,
+    REFERENCES departments(dept_name)
     role_id INT NOT NULL,
     manager_id INT,
     FOREIGN KEY (role_id)
     REFERENCES roles(id)
+
 );
